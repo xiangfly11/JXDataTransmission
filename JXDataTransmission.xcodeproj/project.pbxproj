@@ -18,6 +18,7 @@
 		704867FD1E28C72900557B02 /* ConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704867FC1E28C72900557B02 /* ConnectionViewController.m */; };
 		704868001E29CCA700557B02 /* SessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704867FF1E29CCA700557B02 /* SessionViewController.m */; };
 		7095093C1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7095093B1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m */; };
+		7095093F1E2CBC02007A7E3F /* NSURLConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7095093E1E2CBC02007A7E3F /* NSURLConnectionManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		704867FF1E29CCA700557B02 /* SessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionViewController.m; sourceTree = "<group>"; };
 		7095093A1E2C6EA6007A7E3F /* NSURLConnectionDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionDownloader.h; sourceTree = "<group>"; };
 		7095093B1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDownloader.m; sourceTree = "<group>"; };
+		7095093D1E2CBC02007A7E3F /* NSURLConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionManager.h; sourceTree = "<group>"; };
+		7095093E1E2CBC02007A7E3F /* NSURLConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 			children = (
 				7095093A1E2C6EA6007A7E3F /* NSURLConnectionDownloader.h */,
 				7095093B1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m */,
+				7095093D1E2CBC02007A7E3F /* NSURLConnectionManager.h */,
+				7095093E1E2CBC02007A7E3F /* NSURLConnectionManager.m */,
 			);
 			name = NSURLConnectionManager;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				704867CD1E276F4200557B02 /* ViewController.m in Sources */,
 				704867CA1E276F4200557B02 /* AppDelegate.m in Sources */,
 				704867C71E276F4200557B02 /* main.m in Sources */,
+				7095093F1E2CBC02007A7E3F /* NSURLConnectionManager.m in Sources */,
 				7095093C1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m in Sources */,
 				704867FD1E28C72900557B02 /* ConnectionViewController.m in Sources */,
 				704868001E29CCA700557B02 /* SessionViewController.m in Sources */,

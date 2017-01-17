@@ -76,4 +76,21 @@ typedef void(^failureBlock)(NSError *error);
  */
 - (void)cancel;
 
+
+/**
+ Get last progress of the specific url string
+
+ @param urlStr url string
+ @return progress value
+ */
++ (float)lastProgressWithURL:(NSString *) urlStr;
+
+
+/**
+ Get file size, it is current size / total size
+
+ @param urlStr url string
+ @return file size
+ */
++ (NSString *)fileSizeWithURL:(NSString *)urlStr;
 @end

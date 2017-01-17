@@ -133,4 +133,39 @@ static const NSString *totalLengthKey = @"totalLength";
 }
 
 
++ (float)lastProgressWithURL:(NSString *)urlStr {
+    if (urlStr) {
+        return [[NSUserDefaults standardUserDefaults] floatForKey:[NSString stringWithFormat:@"%@progress",urlStr]];
+    }
+    return 0.0;
+}
+
++ (NSString *)convertSize:(NSUInteger) size {
+    NSString *sizeString = nil;
+    if (size < 1024) {
+        sizeString = [NSString stringWithFormat:@"%ldB",(NSUInteger)size];
+    }else if (size >= 1024 && size < 1024 * 1024) {
+        sizeString = [NSString stringWithFormat:@"%.1fKB",(float)size / 1024];
+    }else if (size >= 1024 * 1024 && size < 1024 * 1024 * 1024){
+        sizeString = [NSString stringWithFormat:@"%.1fMB",(float)size / (1024 * 1024)];
+    }else {
+        sizeString = [NSString stringWithFormat:@"%.1fGB",(float)size / (1024 * 1024 *1024)];
+    }
+    
+    return sizeString;
+}
+
++ (NSString *)fileSizeWithURL:(NSString *)urlStr {
+    float progress = [[NSUserDefaults standardUserDefaults] floatForKey:[NSString stringWithFormat:@"%@progress",urlStr]];
+    NSUInteger totalLength = [[NSUserDefaults standardUserDefaults] integerForKey:[NSString stringWithFormat:@"%@totalLength",urlStr]];
+    
+    NSUInteger currentLength = progress * totalLength;
+    NSString *currentSize = [self convertSize:currentLength];
+    NSString *totalSize = [self convertSize:totalLength];
+    
+    return [NSString stringWithFormat:@"%@/%@",currentSize,totalSize];
+}
+
+
+
 @end

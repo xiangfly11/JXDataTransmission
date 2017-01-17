@@ -14,9 +14,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-connectWithURL:"
-            landmarkType = "7">
+            endingLineNumber = "52">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,9 +28,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "-connectWithURL:"
-            landmarkType = "7">
+            endingLineNumber = "47">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,9 +42,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "-connectionStop"
-            landmarkType = "7">
+            endingLineNumber = "67">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,9 +56,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "-connectionDidFinishLoading:"
-            landmarkType = "7">
+            endingLineNumber = "95">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
