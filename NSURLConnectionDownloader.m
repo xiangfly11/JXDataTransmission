@@ -122,6 +122,8 @@ static const NSString *totalLengthKey = @"totalLength";
     NSDictionary *downloadInfo = @{@"url_str":_urlStr,@"progress":@(progress)};
     [[NSNotificationCenter defaultCenter] postNotificationName:JXConnectionDownloadProgressChangedNotification object:nil userInfo:downloadInfo];
     
+    [[NSUserDefaults standardUserDefaults] setFloat:progress forKey:[NSString stringWithFormat:@"%@progresss",_urlStr]];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {

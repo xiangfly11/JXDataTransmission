@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		704867C71E276F4200557B02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 704867C61E276F4200557B02 /* main.m */; };
 		704867CA1E276F4200557B02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 704867C91E276F4200557B02 /* AppDelegate.m */; };
-		704867CD1E276F4200557B02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704867CC1E276F4200557B02 /* ViewController.m */; };
 		704867D01E276F4200557B02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704867CE1E276F4200557B02 /* Main.storyboard */; };
 		704867D21E276F4200557B02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 704867D11E276F4200557B02 /* Assets.xcassets */; };
 		704867D51E276F4200557B02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 704867D31E276F4200557B02 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,10 @@
 		704868001E29CCA700557B02 /* SessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 704867FF1E29CCA700557B02 /* SessionViewController.m */; };
 		7095093C1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 7095093B1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m */; };
 		7095093F1E2CBC02007A7E3F /* NSURLConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7095093E1E2CBC02007A7E3F /* NSURLConnectionManager.m */; };
+		709509421E2F0FA1007A7E3F /* NSURLConnectionManagerViewControllerDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 709509411E2F0FA1007A7E3F /* NSURLConnectionManagerViewControllerDemo.m */; };
+		709509461E2F1047007A7E3F /* TaskModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 709509451E2F1047007A7E3F /* TaskModel.m */; };
+		7095094E1E2F1128007A7E3F /* TaskTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7095094C1E2F1128007A7E3F /* TaskTableViewCell.m */; };
+		7095094F1E2F1128007A7E3F /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7095094D1E2F1128007A7E3F /* TaskTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +46,6 @@
 		704867C61E276F4200557B02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		704867C81E276F4200557B02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		704867C91E276F4200557B02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		704867CB1E276F4200557B02 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		704867CC1E276F4200557B02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		704867CF1E276F4200557B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		704867D11E276F4200557B02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		704867D41E276F4200557B02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +64,13 @@
 		7095093B1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDownloader.m; sourceTree = "<group>"; };
 		7095093D1E2CBC02007A7E3F /* NSURLConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionManager.h; sourceTree = "<group>"; };
 		7095093E1E2CBC02007A7E3F /* NSURLConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionManager.m; sourceTree = "<group>"; };
+		709509401E2F0FA1007A7E3F /* NSURLConnectionManagerViewControllerDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURLConnectionManagerViewControllerDemo.h; sourceTree = "<group>"; };
+		709509411E2F0FA1007A7E3F /* NSURLConnectionManagerViewControllerDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionManagerViewControllerDemo.m; sourceTree = "<group>"; };
+		709509441E2F1047007A7E3F /* TaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskModel.h; sourceTree = "<group>"; };
+		709509451E2F1047007A7E3F /* TaskModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskModel.m; sourceTree = "<group>"; };
+		7095094B1E2F1128007A7E3F /* TaskTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewCell.h; sourceTree = "<group>"; };
+		7095094C1E2F1128007A7E3F /* TaskTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewCell.m; sourceTree = "<group>"; };
+		7095094D1E2F1128007A7E3F /* TaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,8 @@
 		704867B91E276F4200557B02 = {
 			isa = PBXGroup;
 			children = (
+				709509471E2F10E7007A7E3F /* View */,
+				709509431E2F1013007A7E3F /* Model */,
 				709509391E2C6E68007A7E3F /* NSURLConnectionManager */,
 				704867C41E276F4200557B02 /* JXDataTransmission */,
 				704867DE1E276F4200557B02 /* JXDataTransmissionTests */,
@@ -116,8 +126,6 @@
 			children = (
 				704867C81E276F4200557B02 /* AppDelegate.h */,
 				704867C91E276F4200557B02 /* AppDelegate.m */,
-				704867CB1E276F4200557B02 /* ViewController.h */,
-				704867CC1E276F4200557B02 /* ViewController.m */,
 				704867CE1E276F4200557B02 /* Main.storyboard */,
 				704867D11E276F4200557B02 /* Assets.xcassets */,
 				704867D31E276F4200557B02 /* LaunchScreen.storyboard */,
@@ -164,8 +172,29 @@
 				7095093B1E2C6EA6007A7E3F /* NSURLConnectionDownloader.m */,
 				7095093D1E2CBC02007A7E3F /* NSURLConnectionManager.h */,
 				7095093E1E2CBC02007A7E3F /* NSURLConnectionManager.m */,
+				709509401E2F0FA1007A7E3F /* NSURLConnectionManagerViewControllerDemo.h */,
+				709509411E2F0FA1007A7E3F /* NSURLConnectionManagerViewControllerDemo.m */,
 			);
 			name = NSURLConnectionManager;
+			sourceTree = "<group>";
+		};
+		709509431E2F1013007A7E3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				709509441E2F1047007A7E3F /* TaskModel.h */,
+				709509451E2F1047007A7E3F /* TaskModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		709509471E2F10E7007A7E3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7095094B1E2F1128007A7E3F /* TaskTableViewCell.h */,
+				7095094C1E2F1128007A7E3F /* TaskTableViewCell.m */,
+				7095094D1E2F1128007A7E3F /* TaskTableViewCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7095094F1E2F1128007A7E3F /* TaskTableViewCell.xib in Resources */,
 				704867D51E276F4200557B02 /* LaunchScreen.storyboard in Resources */,
 				704867D21E276F4200557B02 /* Assets.xcassets in Resources */,
 				704867D01E276F4200557B02 /* Main.storyboard in Resources */,
@@ -301,7 +331,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				704867CD1E276F4200557B02 /* ViewController.m in Sources */,
+				709509421E2F0FA1007A7E3F /* NSURLConnectionManagerViewControllerDemo.m in Sources */,
+				7095094E1E2F1128007A7E3F /* TaskTableViewCell.m in Sources */,
+				709509461E2F1047007A7E3F /* TaskModel.m in Sources */,
 				704867CA1E276F4200557B02 /* AppDelegate.m in Sources */,
 				704867C71E276F4200557B02 /* main.m in Sources */,
 				7095093F1E2CBC02007A7E3F /* NSURLConnectionManager.m in Sources */,
