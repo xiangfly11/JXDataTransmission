@@ -62,6 +62,7 @@
 - (void)stopDownloadFile {
     NSString *range = [NSString stringWithFormat:@"bytes:%lld-",_currentLength];
     [_urlRequest setValue:range forHTTPHeaderField:@"Range"];
+    NSLog(@"URL Request:%@",_urlRequest);
     NSLog(@"Range:%@",range);
     [_connection cancel];
     _connection = nil;

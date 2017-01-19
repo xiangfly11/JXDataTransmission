@@ -51,7 +51,7 @@ static const NSUInteger MAX_NUM_COUNT = 3;
 }
 
 - (void)downloadTaskDidFinished:(NSNotification *)notification {
-    NSString *urlStr = [notification.userInfo objectForKey:urlStr];
+    NSString *urlStr = [notification.userInfo objectForKey:@"url_str"];
     [_taskDict removeObjectForKey:urlStr];
     
     if (_taskDict.count < MAX_NUM_COUNT) {
@@ -65,7 +65,7 @@ static const NSUInteger MAX_NUM_COUNT = 3;
 }
 
 - (void)downloadTaskWillResign:(NSNotification *)notification {
-    if(_taskDic.count>0){
+    if(_taskDict.count>0){
         
         _bagroundTaskID=[[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
             
@@ -74,10 +74,10 @@ static const NSUInteger MAX_NUM_COUNT = 3;
 }
 
 - (void)downloadTaskDidBecomeActivity:(NSNotification *)notification {
-    if(_backgroudTaskId!=UIBackgroundTaskInvalid){
+    if(_bagroundTaskID!=UIBackgroundTaskInvalid){
         
-        [[UIApplication sharedApplication] endBackgroundTask:_backgroudTaskId];
-        _backgroudTaskId=UIBackgroundTaskInvalid;
+        [[UIApplication sharedApplication] endBackgroundTask:_bagroundTaskID];
+        _bagroundTaskID=UIBackgroundTaskInvalid;
     }
 }
 
@@ -100,7 +100,7 @@ static const NSUInteger MAX_NUM_COUNT = 3;
     //Check whether total download tasks is more than the maximum number of tasks
     //create a dictionary to store key information about that task
     //use queue to store that task and excute that task later
-    if (_taskDic.count > MAX_NUM_COUNT) {
+    if (_taskDict.count > MAX_NUM_COUNT) {
         NSDictionary *task = @{@"urlString":urlStr,
                                                 @"destinationPath":destinationPath,
                                                 @"progress":progress,
@@ -178,6 +178,14 @@ static const NSUInteger MAX_NUM_COUNT = 3;
         [downloader cancel];
         [_taskDict removeObjectForKey:key];
     }];
+}
+
++ (float)lastProgressForURL:(NSString *)urlStr {
+    return [NSURLConnectionDownloader lastProgressWithURL:urlStr];
+}
+
++ (NSString *)fileSizeForURL:(NSString *)urlStr {
+    return [NSURLConnectionDownloader fileSizeWithURL:urlStr];
 }
 
 @end

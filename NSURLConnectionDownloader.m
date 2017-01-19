@@ -127,11 +127,12 @@ static const NSString *totalLengthKey = @"totalLength";
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    [[NSNotificationCenter defaultCenter] postNotificationName:JXConnectionDownloadFinishedNotification object:nil userInfo:@{@"url_str":_urlStr}];
     if (_completion) {
         self.completion();
     }
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:JXConnectionDownloadFinishedNotification object:nil userInfo:@{@"url_str":_urlStr}];
+    
 }
 
 

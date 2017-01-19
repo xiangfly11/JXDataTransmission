@@ -26,4 +26,8 @@
 - (void)removeForURL:(NSString *)urlStr atPath:(NSString *) path;
 
 - (void)cancelAllDownloadTasks;
+
++ (float)lastProgressForURL:(NSString *)urlStr;
+
++ (NSString *)fileSizeForURL:(NSString *)urlStr;
 @end
